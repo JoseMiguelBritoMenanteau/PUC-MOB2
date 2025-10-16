@@ -20,7 +20,10 @@ export default function App() {
   //const inputRef = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => setSeconds(s => s+1), 1000);
+    const interval = setInterval(() => {
+      setSeconds(s => s+1);
+      console.log("Paso 1 segundo");
+      }, 1000);
     return () => clearIntervall(interval);
   }, []);
 
