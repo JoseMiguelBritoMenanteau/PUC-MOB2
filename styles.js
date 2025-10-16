@@ -57,6 +57,12 @@ const styles = StyleSheet.create ({
     flex:1
   },
 
+  centered: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+
 });
 
 export default styles;

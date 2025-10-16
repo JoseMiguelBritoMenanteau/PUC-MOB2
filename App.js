@@ -1,30 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Acá hay que empezar a escirbir</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-///////////////// ################################################# /////////////////////////
-
 import { StyleSheet, Text, View , ScrollView, Button, FlatList, TextInput, Keyboard, TouchableOpacity, Alert } from 'react-native';
 import React, {useState, useEffect, useRef} from "react";
-import { Card } from 'react-native-paper';
-import styles from "./styles";
+/*import { Card } from 'react-native-paper'; */
+import styles from "./styles.js";
+
+
+
+import TaskBox from './components/taskbox/TaskBox.js'
+
+
+
 
 
 export default function App() {
@@ -74,6 +58,10 @@ export default function App() {
           value = {habito}
           onChangeText = {setHabito} />
           <Button title = "Agregar" onPress={addHabito} /> 
+        </View>
+
+        <View style = {styles.centered}>
+          <TaskBox />
         </View>
         
 
