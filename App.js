@@ -68,11 +68,9 @@ export default function App() {
           <View style = {styles.centered}>
             <TaskBox />
           </View>
-        
-
-      
         </View>
       </ScrollView>
     </SafeAreaView>
+    
   );
 }

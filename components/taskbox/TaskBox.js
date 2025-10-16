@@ -9,11 +9,12 @@ export default function TaskBox() {
 
 
 
+
+
     return (
         <View style = {stylesTaskBox.container}>
             <Pressable
-                title = 'X'
-                onPress = {() => Alert.alert.alert('Eliminar tarea')}
+                onPress = {() => Alert.alert('Eliminar tarea')}
                 style = {stylesTaskBox.pressable_bin}>
 
                 <Text>
@@ -24,8 +25,7 @@ export default function TaskBox() {
 
             <Text>Primera Tarea</Text>
             <Pressable
-                title = '-'
-                onPress = {() => Alert.alert.alert('Bajar')}
+                onPress = {() => Alert.alert('Bajar')}
                 style = {stylesTaskBox.pressable_bajar}>
 
                 <Text>
@@ -35,8 +35,7 @@ export default function TaskBox() {
             </Pressable>
             <Text>0</Text>
             <Pressable
-                title = '+'
-                onPress = {() => Alert.alert.alert('Subir')}
+                onPress = {() => Alert.alert('Subir')}
                 style = {stylesTaskBox.pressable_subir}>
 
                 <Text>
