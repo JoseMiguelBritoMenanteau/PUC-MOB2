@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , ScrollView, Button, FlatList, TextInput, Keyboard, TouchableOpacity, Alert, SafeAreaView} from 'react-native';
+import { StyleSheet, Text, View , ScrollView, Button, FlatList, TextInput, Keyboard, TouchableOpacity, Alert, SafeAreaView } from 'react-native';
 import React, {useState, useEffect, useRef} from "react";
 /*import { Card } from 'react-native-paper'; */
 import styles from "./styles.js";
@@ -59,7 +59,7 @@ export default function App() {
 
           <View style={styles.inputRow}>
             <TextInput style={styles.input}
-            placeholder = "Ingresa el habito a agregar"
+            placeholder = "Ingresa el habito"
             value = {habito}
             onChangeText = {setHabito} />
             <Button title = "Agregar" onPress={addHabito} /> 
