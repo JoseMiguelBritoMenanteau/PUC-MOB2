@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , ScrollView, Button, FlatList, TextInput, Keyboard, TouchableOpacity, Alert } from 'react-native';
+import { StyleSheet, Text, View , ScrollView, Button, FlatList, TextInput, Keyboard, TouchableOpacity, Alert, SafeAreaView} from 'react-native';
 import React, {useState, useEffect, useRef} from "react";
 /*import { Card } from 'react-native-paper'; */
 import styles from "./styles.js";
@@ -6,6 +6,7 @@ import styles from "./styles.js";
 
 
 import TaskBox from './components/taskbox/TaskBox.js'
+//import { SafeAreaView } from 'react-native/types_generated/index';
 
 
 
@@ -48,25 +49,27 @@ export default function App() {
 
 
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <Text style={styles.header}> Has tenido la app abierta durante {seconds} segundos</Text>
+    <SafeAreaView>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.header}> Has tenido la app abierta durante {seconds} segundos</Text>
 
-        <View style={styles.inputRow}>
-          <TextInput style={styles.input}
-          placeholder = "Ingresa el habito a agregar"
-          value = {habito}
-          onChangeText = {setHabito} />
-          <Button title = "Agregar" onPress={addHabito} /> 
-        </View>
+          <View style={styles.inputRow}>
+            <TextInput style={styles.input}
+            placeholder = "Ingresa el habito a agregar"
+            value = {habito}
+            onChangeText = {setHabito} />
+            <Button title = "Agregar" onPress={addHabito} /> 
+          </View>
 
-        <View style = {styles.centered}>
-          <TaskBox />
-        </View>
+          <View style = {styles.centered}>
+            <TaskBox />
+          </View>
         
 
       
-      </View>
-    </ScrollView>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
