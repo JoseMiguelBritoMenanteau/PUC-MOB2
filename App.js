@@ -35,15 +35,15 @@ export default function App() {
 
    };
 
-  const changeCount = (index, delta) => {
-     setHabitos(habitos.map((h,i) => 
-     i === index ? {...h, count: Math.max(0, h.count+delta)} : h
-     ));
-  };
+  //const changeCount = (index, delta) => {
+     //setHabitos(habitos.map((h,i) => 
+     //i === index ? {...h, count: Math.max(0, h.count+delta)} : h
+     //));
+  //};
 
-  const removeHabito = indice => {
-     setHabitos(habitos.filter((_, i) => i === indice));
-  };
+  //const removeHabito = indice => {
+     //setHabitos(habitos.filter((_, i) => i === indice));
+  //};
 
 
 
