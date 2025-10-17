@@ -53,7 +53,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={{flex:1, backgroundColor: 'white'}}>
-      <ScrollView>
+      
         <View style={styles.container}>
           <Text style={styles.header}>Has tenido la app abierta durante {seconds} segundos</Text>
 
@@ -65,8 +65,9 @@ export default function App() {
             maxLength={20}/>
             <Button title = "Agregar" onPress={addHabito} /> 
           </View>
-
+          <ScrollView>
           <View style = {styles.centered}>
+
             {habitos.map((habito, index) => (
               <TaskBox 
                 key = {index}
@@ -75,10 +76,13 @@ export default function App() {
                 Restar = { () => changeCount(index, -1)}
                 Sumar = { () => changeCount(index, 1)}
               />
+
             ))}
+          
           </View>
+          </ScrollView>
         </View>
-      </ScrollView>
+      
     </SafeAreaView>
     
   );
