@@ -5,31 +5,48 @@ const stylesTaskBox = StyleSheet.create ({
     container: {
         display: 'flex',
         flexDirection: 'row',
-        width: '80%',
-        height: 40,
-        justifyContent: 'center',
+        width: '95%',
+        height: 60,
         alignItems: 'center',
+        margin: 20,
+        backgroundColor: 'hsla(240, 13%, 52%, 0.19)',
+        borderRadius: 8,
+        shadowColor: 'black',
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+        paddingHorizontal: 10,
+        justifyContent: 'space-between'
+        
+
+
     },
 
     pressable_bin: {
-        backgroundColor: 'red',
-        width: '15%',
+        backgroundColor: 'hsla(0, 81%, 65%, 0.91)',
+        width: '9%',
+        height: '55%',
         justifyContent: 'center',
         alignItems: 'center',
+        borderRadius: 10,
     },
 
     pressable_bajar: {
-        backgroundColor: 'grey',
-        width: '15%',
+        backgroundColor: 'hsla(0, 7%, 51%, 0.46)',
+        width: '9%',
+        height: '55%',
         justifyContent: 'center',
         alignItems: 'center',
+        borderRadius: 10
     },
 
     pressable_subir: {
         backgroundColor: 'lightblue',
-        width: '15%',
+        width: '9%',
+        height: '55%',
         justifyContent: 'center',
         alignItems: 'center',
+        borderRadius: 10,
     },
 });
 
