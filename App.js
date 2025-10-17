@@ -52,7 +52,7 @@ export default function App() {
 
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex:1, backgroundColor: 'white'}}>
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.header}> Has tenido la app abierta durante {seconds} segundos</Text>
@@ -61,7 +61,8 @@ export default function App() {
             <TextInput style={styles.input}
             placeholder = "Ingresa el habito"
             value = {habito}
-            onChangeText = {setHabito} />
+            onChangeText = {setHabito} 
+            maxLength={30}/>
             <Button title = "Agregar" onPress={addHabito} /> 
           </View>
 
