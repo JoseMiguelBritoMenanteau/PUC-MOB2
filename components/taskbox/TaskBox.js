@@ -16,7 +16,6 @@ export default function TaskBox() {
             <Pressable
                 onPress = {() => Alert.alert('Eliminar tarea')}
                 style = {stylesTaskBox.pressable_bin}>
-
                 <Text>
                     X
                 </Text>
@@ -27,7 +26,6 @@ export default function TaskBox() {
             <Pressable
                 onPress = {() => Alert.alert('Bajar')}
                 style = {stylesTaskBox.pressable_bajar}>
-
                 <Text>
                     -
                 </Text>
@@ -37,7 +35,6 @@ export default function TaskBox() {
             <Pressable
                 onPress = {() => Alert.alert('Subir')}
                 style = {stylesTaskBox.pressable_subir}>
-
                 <Text>
                     +
                 </Text>
