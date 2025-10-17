@@ -33,7 +33,7 @@ const stylesTaskBox = StyleSheet.create ({
 
     pressable_bajar: {
         backgroundColor: 'hsla(0, 7%, 51%, 0.46)',
-        width: '9%',
+        width: '30%',
         height: '55%',
         justifyContent: 'center',
         alignItems: 'center',
@@ -42,12 +42,30 @@ const stylesTaskBox = StyleSheet.create ({
 
     pressable_subir: {
         backgroundColor: 'lightblue',
-        width: '9%',
+        width: '30%',
         height: '55%',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
     },
+
+    values: {
+        width: '30%',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 10
+    },
+
+    centrado: {
+        justifyContent: 'center',
+        fontSize: 20,
+        textAlign: 'center',
+        includeFontPadding: false,
+
+    }
 });
 
 
