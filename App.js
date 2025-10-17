@@ -62,7 +62,7 @@ export default function App() {
             placeholder = "Ingresa el habito"
             value = {habito}
             onChangeText = {setHabito} 
-            maxLength={30}/>
+            maxLength={20}/>
             <Button title = "Agregar" onPress={addHabito} /> 
           </View>
 
