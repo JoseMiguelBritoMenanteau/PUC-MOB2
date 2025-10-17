@@ -5,7 +5,7 @@ import stylesTaskBox from './styles-TaskBox.js';
 
 
 
-export default function TaskBox() {
+export default function TaskBox({habito, Remove, Restar, Sumar}) {
 
 
 
@@ -14,7 +14,7 @@ export default function TaskBox() {
     return (
         <View style = {stylesTaskBox.container}>
             <Pressable
-                onPress = {() => Alert.alert('Eliminar tarea')}
+                onPress = {Remove}
                 style = {stylesTaskBox.pressable_bin}>
                 <Text>
                     X
@@ -22,18 +22,18 @@ export default function TaskBox() {
 
             </Pressable>
 
-            <Text>Primera Tarea</Text>
+            <Text>{habito.name}</Text>
             <Pressable
-                onPress = {() => Alert.alert('Bajar')}
+                onPress = {Restar}
                 style = {stylesTaskBox.pressable_bajar}>
                 <Text>
                     -
                 </Text>
 
             </Pressable>
-            <Text>0</Text>
+            <Text>{habito.count}</Text>
             <Pressable
-                onPress = {() => Alert.alert('Subir')}
+                onPress = {Sumar}
                 style = {stylesTaskBox.pressable_subir}>
                 <Text>
                     +

@@ -39,15 +39,15 @@ export default function App() {
 
    };
 
-  //const changeCount = (index, delta) => {
-     //setHabitos(habitos.map((h,i) => 
-     //i === index ? {...h, count: Math.max(0, h.count+delta)} : h
-     //));
-  //};
+  const changeCount = (index, delta) => {
+    setHabitos(habitos.map((h,i) => 
+      i === index ? {...h, count: Math.max(0, h.count+delta)} : h
+    ));
+  };
 
-  //const removeHabito = indice => {
-     //setHabitos(habitos.filter((_, i) => i === indice));
-  //};
+  const removeHabito = indice => {
+    setHabitos(habitos.filter((_, i) => i !== indice));
+  };
 
 
 
@@ -66,7 +66,15 @@ export default function App() {
           </View>
 
           <View style = {styles.centered}>
-            <TaskBox />
+            {habitos.map((habito, index) => (
+              <TaskBox 
+                key = {index}
+                habito = {habito}
+                Remove = { () => removeHabito(index)}
+                Restar = { () => changeCount(index, -1)}
+                Sumar = { () => changeCount(index, 1)}
+              />
+            ))}
           </View>
         </View>
       </ScrollView>
