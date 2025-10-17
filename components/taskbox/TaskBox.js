@@ -23,6 +23,7 @@ export default function TaskBox({habito, Remove, Restar, Sumar}) {
             </Pressable>
 
             <Text>{habito.name}</Text>
+            {habito.count > 0 && (
             <Pressable
                 onPress = {Restar}
                 style = {stylesTaskBox.pressable_bajar}>
@@ -31,6 +32,7 @@ export default function TaskBox({habito, Remove, Restar, Sumar}) {
                 </Text>
 
             </Pressable>
+            )}
             <Text>{habito.count}</Text>
             <Pressable
                 onPress = {Sumar}
