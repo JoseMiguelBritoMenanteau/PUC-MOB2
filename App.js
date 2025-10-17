@@ -55,7 +55,7 @@ export default function App() {
     <SafeAreaView style={{flex:1, backgroundColor: 'white'}}>
       <ScrollView>
         <View style={styles.container}>
-          <Text style={styles.header}> Has tenido la app abierta durante {seconds} segundos</Text>
+          <Text style={styles.header}>Has tenido la app abierta durante {seconds} segundos</Text>
 
           <View style={styles.inputRow}>
             <TextInput style={styles.input}
