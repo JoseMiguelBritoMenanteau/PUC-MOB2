@@ -23,23 +23,27 @@ export default function TaskBox({habito, Remove, Restar, Sumar}) {
             </Pressable>
 
             <Text>{habito.name}</Text>
-            <Pressable
-                onPress = {Restar}
-                style = {stylesTaskBox.pressable_bajar}>
-                <Text>
-                    -
-                </Text>
 
-            </Pressable>
-            <Text>{habito.count}</Text>
-            <Pressable
-                onPress = {Sumar}
-                style = {stylesTaskBox.pressable_subir}>
-                <Text>
-                    +
-                </Text>
+            <View style = {stylesTaskBox.values}>
+                <Pressable
+                    onPress = {Restar}
+                    style = {stylesTaskBox.pressable_bajar}>
+                    <Text>
+                        -
+                    </Text>
 
-            </Pressable>
+                </Pressable>
+                <Text>{habito.count}</Text>
+                <Pressable
+                    onPress = {Sumar}
+                    style = {stylesTaskBox.pressable_subir}>
+                    <Text>
+                        +
+                    </Text>
+
+                </Pressable>
+            </View>
+            
         </View>
     );
 };
