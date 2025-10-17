@@ -17,9 +17,8 @@ const stylesTaskBox = StyleSheet.create ({
         shadowRadius: 3,
         paddingHorizontal: 10,
         justifyContent: 'space-between'
+
         
-
-
     },
 
     pressable_bin: {
